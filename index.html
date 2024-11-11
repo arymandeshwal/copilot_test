@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contoso Sample Web Chat</title> 
+  <title>Sample Web Chat</title> 
 <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
 <script type="text/javascript" src="https://alcdn.msauth.net/lib/1.2.0/js/msal.js"></script>
 <script src="https://unpkg.com/@azure/storage-blob@10.3.0/browser/azure-storage.blob.min.js"
@@ -177,8 +177,8 @@ async function fetchJSON(url, options = {}) {
      (function (){
        var msalConfig = {
 	   auth: {
-	     clientId: '<CANVAS CLIENT APP ID>',
-	     authority: 'https://login.microsoftonline.com/<TENANT ID>'
+	     clientId: 'ed3f36cb-4a49-4de5-93a0-818ec1af6b02',
+	     authority: 'https://login.microsoftonline.com/d416bcff-00fd-4b31-b34d-c2e2f183159d'
 	   },
 	   cache: {
 	     cacheLocation: 'localStorage',
@@ -193,7 +193,7 @@ async function fetchJSON(url, options = {}) {
 (async function main() {
 
     // Add your BOT ID below 
-    var theURL = "<Token endpoint URL>" // you can find the token URL via the mobile app channel configuration
+    var theURL = "https://defaultd416bcff00fd4b31b34dc2e2f18315.9d.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr926_kiMarktplatzCopilot/directline/token?api-version=2022-03-01-preview" // you can find the token URL via the mobile app channel configuration
 
 	var userId = clientApplication.account?.accountIdentifier != null ? 
 					("You-customized-prefix" + clientApplication.account.accountIdentifier).substr(0, 64) 
